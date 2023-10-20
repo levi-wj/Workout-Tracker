@@ -1,21 +1,18 @@
-import Image from 'next/image'
-
-function BigButton({ props }) {
-  const { text } = props;
-
+export default function Home() {
   return (
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-      {text}
-    </button>
+    <main>
+      <div className="flex gap-4 m-2">
+        <BigButton text="Create workout plan"></BigButton>
+        <BigButton text="Record new workout"></BigButton>
+      </div>
+    </main>
   )
 }
 
-export default function Home() {
+function BigButton({ text }) {
   return (
-    <main className="">
-      <h1>Workout Tracker</h1>
-      <BigButton text="Create workout plan"></BigButton>
-      <BigButton text="Record new workout"></BigButton>
-    </main>
+    <button className="bg-slate-900 break-on-spaces border-2 border-slate-600 hover:border-yellow-300 font-bold py-10 px-4 rounded text-3xl text-slate-400 hover:text-slate-300">
+      {text}
+    </button>
   )
 }

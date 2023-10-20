@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.break-on-spaces {
+    word-spacing: 100vw;
+}
