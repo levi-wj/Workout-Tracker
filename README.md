@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Overview
 
-## Getting Started
+{Describe your purpose for writing this software.}
 
-First, run the development server:
+{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[Software Demo Video](http://youtube.link.goes.here)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Web Pages
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Development Environment
 
-## Learn More
+{Describe the tools that you used to develop the software}
 
-To learn more about Next.js, take a look at the following resources:
+{Describe the programming language that you used and any libraries.}
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Useful Resources
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+{Make a list of websites that you found helpful in this project}
+* [Web Site Name](http://url.link.goes.here)
+* [Web Site Name](http://url.link.goes.here)
 
-## Deploy on Vercel
+# Future Work
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+{Make a list of things that you need to fix, improve, and add in the future.}
+* Item 1
+* Item 2
+* Item 3
