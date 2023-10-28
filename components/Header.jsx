@@ -4,17 +4,21 @@ import Link from "next/link";
 import cn from "classnames";
 import { useState } from 'react';
 
+function HeaderButton({name, selectedTab, setSelectedTab}) {
+  return <Link href={"/" + name.toLowerCase()} onClick={() => setSelectedTab(name)} className={cn({"bg-slate-800 p-4 m-2 rounded": true, "border-b-2 border-yellow-300": selectedTab === 'exercises'})}>{name}</Link>
+}
+
 export default function Header() {
-  const [selectedTab, setSelectedTab] = useState('workouts');
+  const [selectedTab, setSelectedTab] = useState('');
 
   return (
-    <header className="flex justify-between items-center bg-slate-900 p-3">
+    <header className="flex justify-between items-center bg-slate-900 p-5">
       <Link href="/" onClick={() => setSelectedTab('')}>
-        <h1 className="text-2xl">Workout Tracker</h1>
+        <h1 className="text-2xl">Workout Planner</h1>
       </Link>
       <div>
-        <Link href="/workouts" onClick={() => setSelectedTab('workouts')} className={cn({"bg-slate-800 p-2 m-2 rounded": true, "border-b-2 border-yellow-300": selectedTab === 'workouts'})}>Past Workouts</Link>
-        <Link href="/plans" onClick={() => setSelectedTab('plans')} className={cn({"bg-slate-800 p-2 m-2 rounded": true, "border-b-2 border-yellow-300": selectedTab === 'plans'})}>Workout Plans</Link>
+        <HeaderButton name="Exercises" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
+        <HeaderButton name="Plans" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       </div>
     </header>
   )

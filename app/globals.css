@@ -5,3 +5,17 @@
 .break-on-spaces {
     word-spacing: 100vw;
 }
+
+@layer components {
+    .btn-primary {
+        @apply bg-yellow-300 text-gray-900 font-bold py-2 px-4 rounded;
+    }
+
+    .btn-danger {
+        @apply hover:bg-red-700 hover:border-red-600 border-solid border-2 border-red-900 text-gray-100 font-bold py-2 px-4 rounded;
+    }
+
+    .field {
+        @apply border border-gray-700 border-b-gray-400 rounded py-2 px-4 bg-transparent hover:border-b-yellow-300;
+    }
+}

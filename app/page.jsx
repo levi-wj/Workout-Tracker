@@ -11,7 +11,7 @@ export default function Home() {
 
 function BigButton({ text }) {
   return (
-    <button className="bg-slate-900 break-on-spaces border-2 border-slate-600 hover:border-yellow-300 font-bold py-10 px-4 rounded text-3xl text-slate-400 hover:text-slate-300">
+    <button className="bg-slate-900 break-on-spaces border-2 border-slate-600 hover:border-yellow-300 font-bold py-12 px-6 rounded text-3xl text-slate-400 hover:text-slate-300">
       {text}
     </button>
   )
