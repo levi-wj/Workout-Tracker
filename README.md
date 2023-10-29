@@ -1,30 +1,28 @@
 # Overview
 
-{Describe your purpose for writing this software.}
+Web app using next and tailwind to record exercises and enter them into workout plans.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=PJWLwKWIs9Q)
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
+There are two main pages, the 'exercises' page and the 'plans' page. The 'exercises' page is where you can add and delete exercises and their descriptions. The 'plans' page is where you can create plans and add exercises to them. These plans and exercises are stored in localstorage.
+
+Everything takes advantage of react's component system to dynamically render the values stored in localstorage.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+* React
+* Next
+* Tailwind
+* Classnames npm package
 
 # Useful Resources
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [Fireship Next Tutorial](https://www.youtube.com/watch?v=__mSgDEOyv8)
+* [Web Dev Simplified NextJS](https://www.youtube.com/watch?v=NgayZAuTgwM)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Make exercises editable
+* Make plans editable

@@ -5,7 +5,7 @@ import cn from "classnames";
 import { useState } from 'react';
 
 function HeaderButton({name, selectedTab, setSelectedTab}) {
-  return <Link href={"/" + name.toLowerCase()} onClick={() => setSelectedTab(name)} className={cn({"bg-slate-800 p-4 m-2 rounded": true, "border-b-2 border-yellow-300": selectedTab === 'exercises'})}>{name}</Link>
+  return <Link href={"/" + name.toLowerCase()} onClick={() => setSelectedTab(name)} className={cn({"bg-slate-800 p-4 m-2 rounded": true, "bg-slate-500 font-semibold": selectedTab === name})}>{name}</Link>
 }
 
 export default function Header() {
